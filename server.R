@@ -6,7 +6,7 @@ library(ggplot2)
 #set the work directory
 
 
-shinyserver(function(input, output){
+shinyServer(function(input, output){
   #read in data
   mydata <- read.csv("errors.csv")
 
