@@ -3,7 +3,7 @@ library(shiny)
 library(ggmap)
 library(ggplot2)
 
-fluidPage(
+shinyUI(fluidPage(
   #the name of title
   titlePanel("Immigrant Eligibility"),
   
@@ -19,4 +19,4 @@ fluidPage(
   mainPanel(
     plotOutput('plot', height="500")
   )
-)
+))
