@@ -6,7 +6,7 @@ library(ggplot2)
 #set the work directory
 
 
-function(input, output){
+shinyserver(function(input, output){
   #read in data
   mydata <- read.csv("errors.csv")
 
@@ -33,4 +33,4 @@ function(input, output){
     #output map
     print(mymap)
   })
-}
+})
